@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jawaban ex. 03</title>
+	<link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a href="profile.html">Homepage</a>
+  <a href="form stuff.html">Form</a>
+  <a href="kalkulatorjs.html">Kalkulator</a>
+</div>
+
+	<form class="" name="form1">
+	<h1>kalkulator sederhana javascript</h1>
+	<label for="var1"> angka 1 </label>
+	<input type="text" name="var1" />
+	<br>
+	<label for="var2"> angka 2 </label>
+	<input type="text" name="var2"/>
+	<br>
+	<input type="button" onclick="tambah();" value="+"/>
+	<input type="button" onclick="kurang();" value="-"/>
+	<input type="button" onclick="bagi();" value=":"/>
+	<input type="button" onclick="kali();" value="x"/>
+	<br>
+	<input type="text" name="hasil" value=""/>
+</form>
+</body>
+</html>
+
+<script type="text/javascript">
+	function tambah()
+	{
+		var value1 = parseInt(document.form1.var1.value);
+		var value2 = parseInt(document.form1.var2.value);
+		var sum = value1+value2;
+		document.form1.hasil.value = sum;
+
+	}
+
+	function kurang()
+	{
+		var value1 = parseInt(document.form1.var1.value);
+		var value2 = parseInt(document.form1.var2.value);
+		var min = value1-value2;
+		document.form1.hasil.value = min;
+	
+
+	}
+
+	function bagi()
+	{
+		var value1 = parseInt(document.form1.var1.value);
+		var value2 = parseInt(document.form1.var2.value);
+		var bagi = value1/value2;
+		document.form1.hasil.value = bagi;
+	
+
+	}
+
+	function kali()
+	{
+		var value1 = parseInt(document.form1.var1.value);
+		var value2 = parseInt(document.form1.var2.value);
+		var kali = value1*value2;
+		document.form1.hasil.value = kali;
+
+	}
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jawaban ex. 03</title>
+	<link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="profile.html">Homepage</a>
+  <a href="form stuff.html">Form</a>
+  <a href="kalkulatorjs.html">Kalkulator</a>
+</div>
+
+	<form method="post" action="apply-now.php" >
+		<input type="hidden" name="subject" value="class"/>
+		<fieldset><legend>Academic Information</legend>
+			<label for="degree">Degree</label>
+			<select name="degree" id="degree">
+				<option value="BA">Bachelor Of Art</option>
+				<option value="BS">Bachelor Of Science</option>
+				<option value="MBA" selected="selected">Master Of Business Administration</option>
+			</select>
+			<br />
+			<label form="studentid">Student Id</label>
+			<input type="password" name="studentid"/>
+		</fieldset>
+		<fieldset><legend>Personal Detail</legend>
+			<label for="fname">First Name</label>
+			<input type="text" name="fname" id="fname"/>
+			<br />
+			<label for="lname">last Name</label>
+			<input type="text" name="lname" id="lname"/>
+		<br />
+			Gender:
+			<input type="radio" name="gender" id="gm" value="m"/>
+			<label for="gm">Male</label>
+			<input type="radio" name="gender" id="gf" value="f"/>
+			<label for="gf">female</label>
+		<br />
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email"/>
+		</fieldset>
+			<p>
+				<textarea name="terms" cols="30" rows="4" readonly="readonly"> TERMS ANS CONDITION...</textarea>
+			</p>
+			<p>
+				<input type="submit" name="submit" value="send form"/>
+				<input type="reset" value="clear form"/>
+			</p>
+	</form>
+</body>
+</html>
